@@ -1,0 +1,93 @@
+.attribution { font-size: 11px; text-align: center; padding-top: 100px; padding-left: 30px; }
+.attribution a { color: hsl(228, 45%, 44%); }
+body {
+    background-color: hsl(216, 12%, 8%);
+    color: hsl(217, 12%, 63%);
+    font-family: "Overpass", sans-serif;
+}
+h1 {
+    color: hsl(0, 0%, 100%);
+}
+section {
+    display: grid;
+    background-color: hsl(213, 19%, 18%);
+    width: 350px;
+    height: 350px;
+    margin-top: 200px;
+    margin-left: 500px;
+    border-radius: 20px;
+}
+.star {
+    border: 1px solid hsl(212, 11%, 23%);
+    border-radius: 50%;
+    padding: 10px;
+    background-color: hsl(212, 11%, 23%);
+    margin-top: 20px;
+    margin-left: 30px;
+}
+.number {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-left: 20px;
+    margin-right: 0px;
+    margin-bottom: 20px;
+    color: hsl(217, 12%, 63%);
+    background-color: hsl(212, 11%, 23%);
+    border: hsl(212, 11%, 23%);
+    transition: 0.8s;
+}
+.number:hover {
+    background-color: hsl(25, 97%, 53%);
+    cursor: pointer;
+    color: hsl(0, 0%, 100%);
+}
+.number:active, .active-class {
+    background-color: hsl(217, 12%, 63%);
+    color: hsl(0, 0%, 100%);
+    background-position: 0 -40px;
+}
+.submit {
+    margin-left: 20px;
+    margin-right: 20px;
+    text-transform: uppercase;
+    width: 310px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: hsl(25, 97%, 53%);
+    border: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+    transition: 0.8s;
+}
+.submit:hover {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(25, 97%, 53%);
+    cursor: pointer;
+}
+h1, p {
+    margin-left: 30px;
+    margin-right: 20px;
+}
+.thanks {
+    margin-top: 30px;
+    margin-left: 90px;
+}
+article {
+    margin-left: 80px;
+    margin-top: 20px;
+    border: 1px solid hsl(212, 11%, 23%);
+    background-color: hsl(212, 11%, 23%);
+    width: 180px;
+    padding-left: 30px;
+    border-radius: 20px;
+    height: 25px;
+    padding-top: 8px;
+    color: hsl(25, 97%, 53%);
+}
+.thank, .thanp {
+    text-align: center;
+}
+.thanp {
+    margin-left: 25px;
+    margin-right: 25px;
+}
