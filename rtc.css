@@ -91,3 +91,9 @@ article {
     margin-left: 25px;
     margin-right: 25px;
 }
+@media screen and(max-width:375px) {
+    body {width: 100%;
+         margin-left: auto;
+    }
+    section {width: 100%}
+}
