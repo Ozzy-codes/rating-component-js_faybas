@@ -9,13 +9,19 @@ h1 {
     color: hsl(0, 0%, 100%);
 }
 section {
-    display: grid;
-    background-color: hsl(213, 19%, 18%);
-    width: 350px;
-    height: 350px;
-    margin-top: 200px;
-    margin-left: 500px;
-    border-radius: 20px;
+  display: grid;
+  background-color: hsl(213, 19%, 18%);
+  width: 350px;
+  height: 350px;
+  margin-top: 200px;
+  margin-left: 500px;
+  border-radius: 20px;
+}
+span {
+  width: inherit;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
 }
 .star {
     border: 1px solid hsl(212, 11%, 23%);
@@ -26,26 +32,29 @@ section {
     margin-left: 30px;
 }
 .number {
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    margin-left: 20px;
-    margin-right: 0px;
-    margin-bottom: 20px;
-    color: hsl(217, 12%, 63%);
-    background-color: hsl(212, 11%, 23%);
-    border: hsl(212, 11%, 23%);
-    transition: 0.8s;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin-right: 0px;
+  margin-bottom: 20px;
+  color: hsl(217, 12%, 63%);
+  background-color: hsl(212, 11%, 23%);
+  border: hsl(212, 11%, 23%);
+  transition: 0.8s;
 }
 .number:hover {
-    background-color: hsl(25, 97%, 53%);
-    cursor: pointer;
-    color: hsl(0, 0%, 100%);
+  background-color: hsl(25, 97%, 53%);
+  cursor: pointer;
+  color: hsl(0, 0%, 100%);
 }
-.number:active, .active-class {
-    background-color: hsl(217, 12%, 63%);
-    color: hsl(0, 0%, 100%);
-    background-position: 0 -40px;
+input[name="rating_score"] {
+  position: absolute;
+  opacity: 0;
+}
+input:checked + span {
+  background-color: hsl(217, 12%, 63%);
+  color: hsl(0, 0%, 100%);
+  background-position: 0 -40px;
 }
 .submit {
     margin-left: 20px;
@@ -88,8 +97,16 @@ article {
     text-align: center;
 }
 .thanp {
-    margin-left: 25px;
-    margin-right: 25px;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+/* Utility Class */
+.flex {
+  display: flex;
+}
+.space-even {
+  justify-content: space-evenly;
 }
 @media screen and(max-width:375px) {
     section {

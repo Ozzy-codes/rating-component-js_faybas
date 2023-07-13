@@ -15,21 +15,49 @@
 <body>
 
   <!-- Rating state start -->
-   <section>
-     <div class="box">
-       <img class="star" src="./images/icon-star.svg" alt="star">
-       <h1>How did we do?</h1>
-       <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
-       <button class="number">1</button>
-       <button class="number">2</button>
-       <button class="number">3</button>
-       <button class="number">4</button>
-       <button class="number">5</button>
-       <div>
-         <input type="submit" onClick="myFunction()" value="SUBMIT" class="submit"/>
-       </div>
-     </div>
-   </section>
+  <section>
+    <div class="box">
+      <img class="star"
+        src="./images/icon-star.svg"
+        alt="star">
+      <h1>How did we do?</h1>
+      <p>Please let us know how we did with your support request. All feedback is appreciated to
+        help us improve our offering!</p>
+      <div class="flex space-even">
+        <label class="number flex">
+          <input type="radio"
+            name="rating_score">
+          <span class="flex">1</span>
+        </label>
+        <label class="number flex">
+          <input type="radio"
+            name="rating_score">
+          <span class="flex">2</span>
+        </label>
+        <label class="number flex">
+          <input type="radio"
+            name="rating_score">
+          <span class="flex">3</span>
+        </label>
+        <label class="number flex">
+          <input type="radio"
+            name="rating_score">
+          <span class="flex">4</span>
+        </label>
+        <label class="number flex">
+          <input type="radio"
+            name="rating_score">
+          <span class="flex">5</span>
+        </label>
+      </div>
+      <div>
+        <input type="submit"
+          onClick="myFunction()"
+          value="SUBMIT"
+          class="submit" />
+      </div>
+    </div>
+  </section>
 
   <!-- Rating state end -->
   
